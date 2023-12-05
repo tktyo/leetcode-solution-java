@@ -19,7 +19,7 @@ public class Lc15 {
                 int sum=nums[left]+nums[i]+nums[right];
                 if(sum==0){
                     result.add(Arrays.asList(nums[left],nums[i],nums[right]));
-                    while(left<right&&nums[left]==nums[right]){
+                    while(left<right&&nums[left+1]==nums[left]){
                         left++;
                     }
                     while(left<right&&nums[right]==nums[right-1]){
